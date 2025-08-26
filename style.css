@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-roboto: "Roboto", serif;
+  --font-madurai: "Hind Madurai", monospace;
+  --color-primary: rgba(0, 166, 62, 1);
+  --color-secondary: rgba(65, 255, 107, 0.1);
+  --color-dark: rgba(17, 17, 17, 1);
+  --color-gray: rgba(92, 92, 92, 1);
+  --color-gray-light: rgba(242, 242, 242, 1);
+  --color-stroke: rgba(212, 214, 213, 1);
+  --color-green: rgba(0, 166, 62, 1);
+  --color-hero-section: linear-gradient(
+    90deg,
+    rgba(1, 50, 35, 1),
+    rgba(0, 103, 71, 1) 50%,
+    rgba(1, 50, 35, 1) 100%
+  );
+}
+@layer components {
+  .info-badge {
+    @apply font-inter font-semibold text-base px-9 py-3 rounded-full;
+  }
+}

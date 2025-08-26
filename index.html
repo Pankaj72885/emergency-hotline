@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website Favicon Integration -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Website Title -->
+    <title>Emergency Hotline</title>
+
+    <!-- Google Fonts - Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome CDN - Icon Library -->
+    <script
+      src="https://kit.fontawesome.com/5999aa1b8b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Daisy-UI CDN - Tailwind CSS Components -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Tailwind CSS CDN - Utility-First CSS Framework -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind CSS Theme Customization -->
+    <style type="text/tailwindcss">
+      @theme {
+        --font-inter: "Inter", sans-serif;
+        --font-roboto: "Roboto", serif;
+        --font-madurai: "Hind Madurai", monospace;
+        --color-primary: rgba(0, 166, 62, 1);
+        --color-secondary: rgba(65, 255, 107, 0.1);
+        --color-dark: rgba(17, 17, 17, 1);
+        --color-gray: rgba(92, 92, 92, 1);
+        --color-gray-light: rgba(242, 242, 242, 1);
+        --color-stroke: rgba(212, 214, 213, 1);
+        --color-green: rgba(0, 166, 62, 1);
+        --background-image-hero-section: linear-gradient(
+          90deg,
+          rgba(1, 50, 35, 1),
+          rgba(0, 103, 71, 1) 50%,
+          rgba(1, 50, 35, 1) 100%
+        );
+      }
+      @layer components {
+        .info-badge {
+          @apply flex gap-2 md:gap-2.5 font-inter font-semibold text-base px-4 md:px-9 py-2 md:py-3 rounded-full;
+        }
+      }
+    </style>
+
+    <!-- Script to include the JavaScript file -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header
+      class="flex flex-col md:flex-row gap-2.5 justify-between items-center px-5 md:px-15 py-6"
+    >
+      <!-- Logo section  -->
+      <div class="flex items-center gap-2.5">
+        <img class="size-12.5" src="./assets/logo.png" alt="Brand Logo" />
+        <h2 class="font-extrabold text-2xl/6 font-madurai text-[#006747]">
+          Emergency<br />Service
+        </h2>
+      </div>
+      <!-- Info section  -->
+      <div class="flex items-center gap-2.5">
+        <div class="info-badge bg-secondary">
+          <p>0</p>
+          <img class="size-7.5" src="./assets/heart.png" alt="Hart" />
+        </div>
+        <div class="info-badge bg-secondary">
+          <p>100</p>
+          <img class="size-6" src="./assets/coin.png" alt="Coin" />
+        </div>
+        <div class="info-badge bg-primary text-white">
+          <p><span>0</span> Copy</p>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="flex flex-col justify-center items-center text-center gap-3 md:gap-5 px-5 md:px-15 py-3 md:py-5 bg-hero-section text-white"
+    >
+      <img class="size-23" src="./assets/logo-dark.png" alt="Logo Dark" />
+      <h1 class="text-[2.5rem]/11 font-bold font-madurai">
+        Emergency Service Directory
+      </h1>
+      <p class="text-xl/5.5 font-semibold font-madurai">
+        Government Emergency Services at Your Fingertip - A Project by
+        Government of the People's Republic of Bangladesh
+      </p>
+    </section>
+    <!-- Main Section -->
+    <main
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6 px-4 md:px-15 py-4 md:py-12 bg-[#F5FFF6]"
+    >
+      <!-- Call Service Section -->
+      <section
+        class="lg:col-span-2 xl:col-span-3 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6"
+      >
+        <!-- Service Card -->
+        <!-- Service Card-1 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-2 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-3 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-4 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-5 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-6 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-7 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-8 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card-9 -->
+        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+          <div class="flex justify-between items-center">
+            <img
+              class="size-15"
+              src="./assets/emergency.png"
+              alt="Fire Service"
+            />
+            <i class="fa-regular fa-heart text-2xl"></i>
+          </div>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-bold font-madurai text-2xl text-dark">
+                National Emergency Number
+              </h3>
+              <p class="font-roboto text-lg font-normal text-gray">
+                National Emergency
+              </p>
+            </div>
+            <div>
+              <h3 class="font-roboto font-black text-[2rem] text-dark">999</h3>
+              <p
+                class="bg-gray-light px-4 py-1.5 text-gray text-lg font-normal font-madurai rounded-lg inline-block"
+              >
+                All
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <button
+                class="border-stroke border p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-gray cursor-pointer"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="p-2 rounded-lg flex gap-1.5 justify-center items-center font-roboto text-white bg-green cursor-pointer"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- History Section -->
+      <section class="bg-white p-3 md:p-6 space-y-4">
+        <header class="flex justify-between items-center">
+          <p class="text-xl font-medium font-roboto text-dark">
+            <i class="fa-regular fa-clock"></i> Call History
+          </p>
+          <button class="text-white bg-green px-9 py-3 rounded-full">
+            Clear
+          </button>
+        </header>
+        <main class="space-y-3">
+          <!-- History List -->
+          <!-- History List-1 -->
+          <div
+            class="flex justify-between items-center p-2 md:p-4 bg-[#FAFAFA]"
+          >
+            <div>
+              <h3 class="text-dark text-lg font-inter font-semibold">
+                Fire Service Number
+              </h3>
+              <p class="text-gray text-lg font-madurai">999</p>
+            </div>
+            <div>
+              <p class="text-dark font-madurai text-lg">11:02:30 PM</p>
+            </div>
+          </div>
+          <!-- History List-2 -->
+          <div
+            class="flex justify-between items-center p-2 md:p-4 bg-[#FAFAFA]"
+          >
+            <div>
+              <h3 class="text-dark text-lg font-inter font-semibold">
+                Fire Service Number
+              </h3>
+              <p class="text-gray text-lg font-madurai">999</p>
+            </div>
+            <div>
+              <p class="text-dark font-madurai text-lg">11:02:30 PM</p>
+            </div>
+          </div>
+        </main>
+      </section>
+    </main>
+  </body>
+</html>
