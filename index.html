@@ -79,7 +79,7 @@
       <!-- Info section  -->
       <div class="flex items-center gap-2.5">
         <div class="info-badge bg-secondary">
-          <p>0</p>
+          <p id="heart-count">0</p>
           <img class="size-7.5" src="./assets/heart.png" alt="Hart" />
         </div>
         <div class="info-badge bg-secondary">
@@ -87,7 +87,7 @@
           <img class="size-6" src="./assets/coin.png" alt="Coin" />
         </div>
         <div class="info-badge bg-primary text-white">
-          <p><span>0</span> Copy</p>
+          <p><span>2</span> Copy</p>
         </div>
       </div>
     </header>
@@ -110,18 +110,20 @@
     >
       <!-- Call Service Section -->
       <section
+        id="services-card-section"
         class="lg:col-span-2 xl:col-span-3 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-6"
       >
         <!-- Service Card -->
         <!-- Service Card-1 -->
-        <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
+        <div id="service-card" class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
           <div class="flex justify-between items-center">
             <img
               class="size-15"
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -158,7 +160,7 @@
         <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
           <div class="flex justify-between items-center">
             <img class="size-15" src="./assets/police.png" alt="Fire Service" />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -191,7 +193,7 @@
         </div>
         <!-- Service Card-3 -->
         <div class="rounded-xl p-4 md:p-8 space-y-3 bg-white">
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center cursor-pointer">
             <img
               class="size-15"
               src="./assets/fire-service.png"
@@ -238,7 +240,7 @@
               src="./assets/ambulance.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -279,7 +281,7 @@
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -320,7 +322,7 @@
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -361,7 +363,7 @@
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -404,7 +406,7 @@
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -445,7 +447,7 @@
               src="./assets/emergency.png"
               alt="Fire Service"
             />
-            <i class="fa-regular fa-heart text-2xl"></i>
+            <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
           </div>
           <div class="space-y-6">
             <div>
@@ -485,11 +487,14 @@
           <p class="text-xl font-medium font-roboto text-dark">
             <i class="fa-regular fa-clock"></i> Call History
           </p>
-          <button class="text-white bg-green px-9 py-3 rounded-full">
+          <button
+            id="clear-btn"
+            class="text-white bg-green px-9 py-3 rounded-full"
+          >
             Clear
           </button>
         </header>
-        <main class="space-y-3">
+        <main id="history-section" class="space-y-3">
           <!-- History List -->
           <!-- History List-1 -->
           <div
